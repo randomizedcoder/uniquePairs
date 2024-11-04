@@ -48,7 +48,9 @@ func main() {
 	fmt.Println("Unique pairs:")
 	count := 0
 	for _, pair := range pairSlice {
-		fmt.Println(pair)
+
+		s := pair[0] + pair[1]
+		fmt.Println(pair[0], "+", pair[1], "=", s)
 		count++
 	}
 	fmt.Println("Unique pairs count:", count)
